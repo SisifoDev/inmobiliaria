@@ -12,9 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <main className="font-sans">
+        <h1 className="text-center text-5xl font-bold my-20">
+          Welcome to <a className="text-blue-300" href="https://nextjs.org">Next.js with Tailwind CSS!</a>
         </h1>
 
         <p className={styles.description}>
