@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import NavBar from '../components/NavBar'
-
+import Header from '../components/Header'
 const Home: NextPage = () => {
   return (
     <div className="divide-y">
@@ -13,12 +13,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
      
-      <main className="bg-[#E5E5E5] h-screen">
+      <main className="bg-[#E5E5E5] ">
         <NavBar />
-        <h1 className="text-center text-5xl font-bold my-20">
-          Welcome to <a className="text-blue-300" href="https://nextjs.org">Next.js with Tailwind CSS!</a>
-        </h1>
-
+        
+        <Header />
        
       </main>
 

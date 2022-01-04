@@ -4,9 +4,9 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="bg-white">
+    <nav className="flex justify-center px-24 bg-white h-[90px]">
       {/* Nextjs Tailwind Navbar */}
-      <div className="flex items-center justify-between flex-wrap p-6 max-w-4xl mx-16">
+      <div className="flex items-center justify-between flex-wrap text-slate-700 font-bold flex-1">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <Link href="/" passHref>
             <Image
@@ -18,16 +18,18 @@ const NavBar = () => {
             />
           </Link>
         </div>
-        <div className=" text-cyan-700">
-          <ul className="flex flex-row justify-between flex-wrap">
+        <div>
+          <ul className="flex flex-row justify-center gap-6 flex-wrap">
             <li>
               <Link href="/buscar">Buscar inmuebles</Link>
             </li>
             <li>
               <Link href="/contacto">Yantrana Seguros</Link>
             </li>
+            <li>Recibir asesoría</li>
           </ul>
         </div>
+        <div>Iniciar sesión</div>
       </div>
     </nav>
   );
