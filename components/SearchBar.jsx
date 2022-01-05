@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "./Input";
+import Select from "./Select";
 
 const SearchBar = () => {
   return (
@@ -15,7 +15,7 @@ const SearchBar = () => {
         </div>
         <div className="flex justify-between gap-8 items-center ">
           <form action="" className="flex justify-between gap-8 items-center ">
-            <Input
+            <Select
               name="tipo"
               id="tipo"
               opt={[
@@ -27,12 +27,12 @@ const SearchBar = () => {
                 "Otros",
               ]}
             />
-            <Input
+            <Select
               name="estado"
               id="estado"
               opt={["Nuevo en venta", "Usado en venta", "Nuevo en arriendo"]}
             />
-            <Input
+            <Select
               name="ubicacion"
               id="ubicacion"
               opt={["sevilla", "campo nuñez", "centro", "la gaitana"]}

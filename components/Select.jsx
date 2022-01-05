@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ name, id, opt }) => {
+const Select = ({ name, id, opt }) => {
   console.log(opt);
   return (
     <div>
@@ -19,4 +19,4 @@ const Input = ({ name, id, opt }) => {
   );
 };
 
-export default Input;
+export default Select;
