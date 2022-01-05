@@ -1,7 +1,10 @@
 import React from "react";
-import Select from "./Select";
+import CustomSelect from "./CustomSelect";
 
 const SearchBar = () => {
+  const opt: string[] = [];
+
+
   return (
     <div className="flex absolute bottom-24 left-[12.5%] justify-center bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80 border border-gray-200 h-40 w-3/4 rounded-2xl">
       <div className="flex flex-col justify-center gap-4 ">
@@ -15,9 +18,8 @@ const SearchBar = () => {
         </div>
         <div className="flex justify-between gap-8 items-center ">
           <form action="" className="flex justify-between gap-8 items-center ">
-            <Select
-              name="tipo"
-              id="tipo"
+            <CustomSelect
+
               opt={[
                 "Casas",
                 "Apartamentos",
@@ -27,14 +29,12 @@ const SearchBar = () => {
                 "Otros",
               ]}
             />
-            <Select
-              name="estado"
-              id="estado"
+            <CustomSelect
+
               opt={["Nuevo en venta", "Usado en venta", "Nuevo en arriendo"]}
             />
-            <Select
-              name="ubicacion"
-              id="ubicacion"
+            <CustomSelect
+
               opt={["sevilla", "campo nuñez", "centro", "la gaitana"]}
             />
             <button>Buscar</button>
