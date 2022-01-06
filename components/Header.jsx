@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 
 const NavBar = () => {
   return (
-    <header className="relative  h-screen bg-[url('/img/background/header-bg.jpg')] bg-cover">
+    <header className="relative h-screen bg-[url('/img/background/header-bg.jpg')] bg-cover">
       <SearchBar />
     </header>
   );

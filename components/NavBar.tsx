@@ -4,10 +4,10 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-center px-24 bg-white h-[90px]">
+    <nav className="flex justify-center px-24 bg-white backdrop-filter backdrop-blur-md bg-opacity-80 w-full shadow-xl h-[90px] fixed z-50">
       {/* Nextjs Tailwind Navbar */}
       <div className="flex items-center justify-between flex-wrap text-slate-700 font-bold flex-1">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <div className="flex items-center flex-shrink-0 mr-6">
           <Link href="/" passHref>
             <Image
               src="/img/logo.svg"
@@ -24,7 +24,7 @@ const NavBar = () => {
               <Link href="/buscar">Buscar inmuebles</Link>
             </li>
             <li>
-              <Link href="/contacto">Yantrana Seguros</Link>
+              <Link href="/seguros">Yantrana Seguros</Link>
             </li>
             <li>Recibir asesoría</li>
           </ul>
